@@ -6,3 +6,4 @@ authors = ["Robin Eklind"]
 license = "0BSD"
 description = "LaTeX style for Typst."
 exclude = ["inc"]
+repository = "https://github.com/mewmew/latex-lookalike"
