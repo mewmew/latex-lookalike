@@ -1,8 +1,8 @@
-#import "@local/latex-style:0.1.0"
+#import "@local/latex-lookalike:0.1.0"
 
 #set heading(numbering: "1.1")
 
-#show: latex-style.style_outline
+#show: latex-lookalike.style_outline
 
 #outline()
 
