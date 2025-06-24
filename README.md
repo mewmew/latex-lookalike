@@ -1,11 +1,19 @@
 # LaTeX styles for Typst
 
+The aim of the `latex-lookalike` package is to re-create the look and feel of LaTeX for Typst.
+
+The styling of different components are kept separate, so users are free to pick and choose which styles to use (see [Styles](#Styles)).
+
+## Example document
+
 ```bash
 # Init new example document based on latex-lookalike template.
 typst init @local/latex-lookalike
 ```
 
-## Outline
+## Styles
+
+### Outline style
 
 ```typst
 // Style outline as LaTeX "Table of contents".
@@ -20,7 +28,7 @@ After (with `latex-lookalike.style_outline` applied):
 
 # Local development
 
-Make package available to Typst under `@local/latex-lookalike:0.1.0`.
+Run the following commands to make the package available for local development to Typst under the import path `@local/latex-lookalike:0.1.0`.
 ```bash
 mkdir -p ~/.local/share/typst/packages/local/latex-lookalike
 ln -s "$(realpath latex-lookalike)"  ~/.local/share/typst/packages/local/latex-lookalike/0.1.0
