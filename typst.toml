@@ -6,7 +6,3 @@ authors = ["Robin Eklind"]
 license = "0BSD"
 description = "LaTeX style for Typst."
 exclude = ["inc"]
-
-[template]
-path = "template"
-entrypoint = "example.typ"

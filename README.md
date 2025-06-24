@@ -7,8 +7,8 @@ The styling of different components are kept separate, so users are free to pick
 ## Example document
 
 ```bash
-# Init new example document based on latex-lookalike template.
-typst init @local/latex-lookalike
+# Compile example document.
+typst compile example/example.typ
 ```
 
 ## Styles
