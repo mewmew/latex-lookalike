@@ -1,5 +1,5 @@
 // Style outline as LaTeX "Table of contents".
-#let style_outline(it) = {
+#let style-outline(it) = {
 	// Use "Table of contents" title instead of "Contents".
 	set outline(title: [Table of contents])
 

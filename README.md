@@ -17,13 +17,13 @@ typst compile example/example.typ
 
 ```typst
 // Style outline as LaTeX "Table of contents".
-#show: latex-lookalike.style_outline
+#show: latex-lookalike.style-outline
 ```
 
 Before (default Typst style):
 ![before](inc/outline_before.png)
 
-After (with `latex-lookalike.style_outline` applied):
+After (with `latex-lookalike.style-outline` applied):
 ![after](inc/outline_after.png)
 
 # Local development

@@ -3,7 +3,7 @@
 #set heading(numbering: "1.1")
 
 // Style outline as LaTeX "Table of contents".
-#show: latex-lookalike.style_outline
+#show: latex-lookalike.style-outline
 
 #outline()
 
