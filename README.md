@@ -30,6 +30,7 @@ After (with `latex-lookalike.style_outline` applied):
 
 Run the following commands to make the package available for local development to Typst under the import path `@local/latex-lookalike:0.1.0`.
 ```bash
+git clone https://github.com/mewmew/latex-lookalike
 mkdir -p ~/.local/share/typst/packages/local/latex-lookalike
 ln -s "$(realpath latex-lookalike)"  ~/.local/share/typst/packages/local/latex-lookalike/0.1.0
 ```
