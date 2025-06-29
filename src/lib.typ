@@ -1,7 +1,14 @@
 // Style outline as LaTeX "Table of contents".
 #let style-outline(it) = {
 	// Use "Table of contents" title instead of "Contents".
-	set outline(title: [Table of contents])
+	//set outline(title: [Table of contents]) if text.lang == "en"
+	show outline: it => {
+		show heading: it => {
+			show "Contents": "Table of contents"
+			it
+		}
+		it
+	}
 
 	// Use spacing to group header level 1 entries.
 	show outline.entry.where(level: 1): set block(above: 1.5em)
