@@ -25,7 +25,11 @@
 	// Increase spacing between section number and section title.
 	show outline.entry: it => link(
 		it.element.location(),
-		it.indented(it.prefix() + h(0.4em), it.inner()),
+		if it.prefix() == none {
+			it.indented(none, it.inner())
+		} else {
+			it.indented(it.prefix() + h(0.4em), it.inner())
+		},
 	)
 
 	it
