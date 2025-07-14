@@ -1,4 +1,4 @@
-#import "@local/latex-lookalike:0.1.2"
+#import "@preview/latex-lookalike:0.1.3"
 
 // Style outline as LaTeX "Table of contents".
 #show: latex-lookalike.style-outline
@@ -32,9 +32,5 @@
 #lorem(10)
 
 == fob
-
-#lorem(10)
-
-#heading("Appendices", numbering: none)
 
 #lorem(10)
