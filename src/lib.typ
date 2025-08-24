@@ -24,3 +24,25 @@
 
 	it
 }
+
+// abstract displays an abstract block.
+#let abstract(body, title: "Abstract") = {
+	set par(
+		justify: true,
+		first-line-indent: (amount: 1.5em, all: true),
+		leading: 0.55em, // adjust line height
+		spacing: 0.55em, // no space between paragraphs
+	)
+	block(
+		inset: (x: 1.07cm),
+	)[
+		#align(center,
+			block(
+				below: 1.45em,
+				strong[#title]
+			)
+		)
+
+		#body
+	]
+}
