@@ -25,6 +25,38 @@
 	it
 }
 
+// make-title displays the title, authors and date as specified by the
+// corresponding document metadata variables.
+#let make-title() = context {
+	let authors = document.author
+	let date = none
+	if document.date == auto {
+		date = datetime.today()
+	} else if document.date != none {
+		date = document.date
+	}
+	show title: set text(weight: "regular")
+	v(1.7cm)
+	align(center)[
+		#block(
+			below: 3em,
+			title()
+		)
+		#if authors.len() > 0 {
+			block(
+				below: 2.3em,
+				text(size: 1.3em)[#authors.join(",", last: " and ")]
+			)
+		}
+		#if date != none {
+			block(
+				below: 2.1em,
+				text(size: 1.3em)[#date.display()]
+			)
+		}
+	]
+}
+
 // abstract displays an abstract block.
 #let abstract(body, title: "Abstract") = {
 	set par(
