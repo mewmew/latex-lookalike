@@ -36,7 +36,7 @@
 		date = document.date
 	}
 	show title: set text(weight: "regular")
-	v(1.7cm)
+	v(1.67cm)
 	align(center)[
 		#block(
 			below: 3em,
@@ -44,13 +44,13 @@
 		)
 		#if authors.len() > 0 {
 			block(
-				below: 2.3em,
+				below: 2.25em,
 				text(size: 1.3em)[#authors.join(",", last: " and ")]
 			)
 		}
 		#if date != none {
 			block(
-				below: 2.1em,
+				below: 2.15em,
 				text(size: 1.3em)[#date.display()]
 			)
 		}
@@ -66,7 +66,7 @@
 		spacing: 0.55em, // no space between paragraphs
 	)
 	block(
-		inset: (x: 1.07cm),
+		inset: (x: 1.03cm),
 	)[
 		#align(center,
 			block(
