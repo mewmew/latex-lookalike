@@ -1,9 +1,7 @@
-#import "@preview/latex-lookalike:0.1.3"
+#import "@preview/latex-lookalike:0.1.4"
 
-// Style outline as LaTeX "Table of contents".
-#show: latex-lookalike.style-outline
-
-#set heading(numbering: "1.1")
+// Style outline and headings as LaTeX.
+#show: latex-lookalike.style.with(justify: false)
 
 #outline()
 
