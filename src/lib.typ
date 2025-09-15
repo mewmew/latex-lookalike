@@ -51,12 +51,9 @@
 }
 
 // Style quote with larger horizontal margin.
-#let style-quote(body) = {
-	set block(inset: (x: 1em))
+#let style-quote = block.with(width: 100%, inset: (x: 1.5em))
 
-	body
-}
-
+// Style outline, headings, lists and quotes using the style of LaTeX.
 #let style(justify: true, numbering: "1.1", body) = {
 	// Use arabic numbering of headings.
 	set heading(numbering: numbering)
@@ -74,7 +71,6 @@
 	show enum: style-list
 
 	// Style quote with larger horizontal margin.
-	//show quote: style-quote
 	show quote: style-quote
 
 	set par(justify: justify)
